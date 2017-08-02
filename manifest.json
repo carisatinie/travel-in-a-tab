@@ -1,0 +1,21 @@
+{
+
+	"name": "Travel in a Tab",
+	"version": "0.1",
+	"manifest_version": 2,
+
+	"chrome_url_overrides": {
+		"newtab": "page.html"
+	},
+
+	"permissions": [
+		"storage"
+	],
+	"content_scripts": [
+	    {
+	      "matches": ["<all_urls>"],
+	      "js": ["background.js"]
+	    }
+  	]
+
+}
